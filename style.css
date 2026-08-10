@@ -1,61 +1,61 @@
 body {
-	max-width: 60%;
-	margin: auto;
-	background-color: aliceblue;
+  max-width: 60%;
+  margin: auto;
+  background-color: aliceblue;
 }
 
 h1,
 h2,
 h3 {
-	font-family: 'Philosopher', serif;
-	font-weight: 700;
+  font-family: "Philosopher", serif;
+  font-weight: 700;
 }
 
 p,
 li {
-	font-family: 'Philosopher', serif;
-	font-weight: 400;
-	line-height: 1.5em;
-	text-align: justify;
+  font-family: "Philosopher", serif;
+  font-weight: 400;
+  line-height: 1.5em;
+  text-align: justify;
 }
 
 header {
-	text-align: center;
+  text-align: center;
 }
 footer {
-	height: 150px;
+  height: 150px;
 }
 .container {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .skills-and-education {
-	width: 55%;
+  width: 55%;
 }
 
 .developer-img {
-	width: 35%;
-	margin: auto 0;
+  width: 35%;
+  margin: auto 0;
 }
 
 .developer-img img {
-	width: 100%;
-    border-radius: 50%;
+  width: 100%;
+  border-radius: 50%;
 }
 
 @media (max-width: 1024px) {
-	.container {
-		flex-direction: column;
-		flex-flow: column-reverse;
-	}
+  .container {
+    flex-direction: column;
+    flex-flow: column-reverse;
+  }
 
-	.developer-img {
-		width: 50%;
-		margin: auto;
-	}
+  .developer-img {
+    width: 50%;
+    margin: auto;
+  }
 
-	.skills-and-education {
-		width: 100%;
-	}
+  .skills-and-education {
+    width: 100%;
+  }
 }
