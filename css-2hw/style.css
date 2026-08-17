@@ -1,0 +1,93 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: aliceblue;
+  margin: 0;
+}
+
+main,
+#contact-information {
+  max-width: 60%;
+  margin: auto;
+}
+
+h1,
+h2,
+h3 {
+  color: dodgerblue;
+  margin-top: 0;
+  font-family: "Philosopher", serif;
+  font-weight: 700;
+}
+
+p,
+li {
+  font-family: "Philosopher", serif;
+  font-weight: 400;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+header {
+  text-align: center;
+  background-color: deepskyblue;
+}
+
+header h1 {
+  color: white;
+}
+
+main {
+  margin-top: -550px;
+}
+
+footer {
+  margin-top: 30px;
+  height: 100px;
+  background-color: deepskyblue;
+}
+
+aside {
+  position: sticky;
+  top: 1%;
+  margin-left: 30px;
+}
+
+#goals > img {
+  max-width: 30%;
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 25px black;
+}
+
+#contact-information {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav a,
+nav a:visited {
+  color: royalblue;
+  text-decoration: none;
+  line-height: 3em;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: midnightblue;
+}
+
+nav li {
+  list-style: none;
+}
+
+#contact-information,
+#contact-information a {
+  color: white;
+  text-decoration: none;
+  margin-top: 30px;
+}
