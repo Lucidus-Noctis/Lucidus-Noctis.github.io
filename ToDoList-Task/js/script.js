@@ -10,10 +10,12 @@ addBtn.addEventListener('click', function() {
 })
 
 function createTaskElement(text) {
+    addTaskToList(counter, text);
+
     const checkboxElement = document.createElement("input");
     checkboxElement.className = "form-check-input mt-0 my-checkbox";
     checkboxElement.type = 'checkbox';
-    checkboxElement.id = counter;
+    checkboxElement.id = counter++;
 
     const labelElement = document.createElement("label");
     labelElement.className = "form-check-label my-checkbox-label";
@@ -36,6 +38,7 @@ function createTaskElement(text) {
     const taskElement = document.createElement("article");
     taskElement.className = "d-flex align-items-center p-3 bg-white rounded-4 gap-3 mt-3";
     taskElement.append(divFlexContainer, trashBtnElement);
+    taskElement.title = `Start date: ${taskList.get(+checkboxElement.id).startDate}`;
 
     trashBtnElement.addEventListener('click', () => taskElement.remove());
     checkboxElement.addEventListener("change", function() {
@@ -46,15 +49,16 @@ function createTaskElement(text) {
             taskData.endDate = getDate();
             taskElement.classList.add("opacity-50");
             labelElement.classList.add("text-decoration-line-through")
+            taskElement.title = `End date: ${taskList.get(+checkboxElement.id).endDate}`;
         } else {
             taskData.status = "todo";
             taskData.endDate = null;
             taskElement.classList.remove("opacity-50");
             labelElement.classList.remove("text-decoration-line-through")
+            taskElement.title = `Start date: ${taskList.get(+checkboxElement.id).startDate}`;
         }
     });
 
-    addTaskToList(counter++, text);
     return taskElement;
 }
 
