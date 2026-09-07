@@ -1,0 +1,107 @@
+:root {
+    --primary-color: #6B62FC;
+    --secondary-color: #9f9bd7;
+}
+
+body {
+    background: #EEAECA;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    font-family: 'Inter', sans-serif;
+}
+
+.logo-img {
+    max-height: 50px;
+    display: block;
+    margin: 20px auto 0px auto;
+}
+
+.text-title {
+    font-weight: 700;
+}
+
+.text-title-description {
+    font-weight: 500;
+    color: grey;
+    font-size: 22px;
+}
+
+.my-container {
+    max-width: 700px;
+}
+
+.label-for-input {
+    text-indent: 15px;
+}
+
+#input-task {
+    font-size: 20px;
+}
+
+.my-btn {
+    font-size: 1.5rem;
+    background-color: var(--primary-color);
+    border-color: var(--secondary-color);
+    text-wrap: nowrap;
+    transition: transform 0.1s;
+    padding-right: 0;
+}
+
+.my-btn:hover,
+.my-btn:active {
+    background-color: var(--secondary-color) !important;
+    border-color: var(--secondary-color) !important;
+}
+
+.my-btn:active {
+    transform: scale(0.95);
+}
+
+.my-checkbox {
+    width: 32px;
+    height: 32px;
+    border: 2px solid #9aa8c7;
+    border-radius: 50% !important;
+    cursor: pointer;
+}
+
+.my-checkbox:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    background-image: url("../img/checkmark.png");
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.my-checkbox-label {
+    font-size: 18px;
+    font-weight: 600;
+    text-wrap: wrap;
+    color: #25253A;
+    line-height: 1.2;
+    text-align: justify;
+    overflow-wrap: anywhere;
+}
+
+.trash-btn {
+    max-height: 30px;
+    transition: transform 0.1s;
+}
+
+.trash-btn:active {
+    transform: scale(0.9);
+}
+
+.footer-text {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #6b6f8f;
+}
+
+.heart {
+    color: #ff5b97;
+    font-size: 14px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <head>
+        <div class="container my-container">
+            <img src='img/logo.png' class="logo-img" alt="logo">
+            <h1 class="text-center text-title">TODO LIST</h1>
+            <p class="text-center text-title-description">Small steps. Big results.</p>
+        </div>
+    </head>
+
+    <main class="flex-grow-1">
+        <div class="container bg-white bg-opacity-50 rounded-4 p-4 my-container">
+
+            <section class="row">
+
+                <div class="form-floating col-12 col-md-8">
+                    <input class="form-control" 
+                           type="text"
+                           placeholder="" 
+                           id="input-task">
+                    <label class="label-for-input" for="inupt-task">&#x1F4DD; What do you want to do?</label>
+                </div>
+
+                <div class="col-5 mx-auto mt-3 col-md-4 mt-md-0">
+                    <button class="btn btn-primary h-100 w-100 my-btn" id="add-btn">ADD +</button>
+                </div>
+
+            </section>
+
+            <section class="row" id="tasks"></section> 
+        </div>
+    </main>
+
+    <footer>
+        <div class="container d-flex justify-content-center gap-3 mb-3 mt-3">
+            <span class="heart">&#x2665;</span>
+            <span class="footer-text">BE PRODUCTIVE</span>
+            <span class="heart">&#x2665;</span>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
