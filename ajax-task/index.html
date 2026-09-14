@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Аналіз курсу валют НБУ</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="py-4 py-md-5">
+
+  <div class="container" style="max-width: 900px;">
+    
+    <!-- Заголовок -->
+    <div class="text-center mb-4">
+      <h2 class="fw-bold text-dark">Аналіз курсу валют НБУ</h2>
+      <p class="text-secondary">Оберіть валюту та діапазон дат для побудови графіка</p>
+    </div>
+
+    <!-- Головна картка додатка -->
+    <div class="card main-card p-4 p-md-5 bg-white">
+      
+      <!-- Форма керування -->
+      <form id="currencyForm" onsubmit="event.preventDefault();">
+        <div class="row g-3 align-items-end">
+          
+          <!-- Випадаючий список валют -->
+          <div class="col-12 col-md-4">
+            <label for="valcode" class="form-label fw-semibold text-secondary small">
+              <i class="bi bi-cash-stack me-1"></i> Валюта
+            </label>
+            <select class="form-select form-select-lg" id="valcode" required>
+            </select>
+          </div>
+
+          <!-- Початкова дата -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <label for="startDate" class="form-label fw-semibold text-secondary small">
+              <i class="bi bi-calendar-event me-1"></i> Дата "З"
+            </label>
+            <input type="date" class="form-control form-control-lg" id="startDate" required>
+          </div>
+
+          <!-- Кінцева дата -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <label for="endDate" class="form-label fw-semibold text-secondary small">
+              <i class="bi bi-calendar-check me-1"></i> Дата "ПО"
+            </label>
+            <input type="date" class="form-control form-control-lg" id="endDate" required>
+          </div>
+
+          <!-- Кнопка побудови -->
+          <div class="col-12 col-md-2">
+            <button type="submit" class="btn btn-primary btn-lg w-100 fw-semibold">
+              <i class="bi bi-bar-chart-line me-1"></i> Графік
+            </button>
+          </div>
+
+        </div>
+      </form>
+
+      <hr class="my-4 text-muted opacity-25">
+
+      <!-- Секція для графіка -->
+      <div class="chart-section">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h5 class="fw-bold mb-0 text-dark">Динаміка курсу</h5>
+          <span class="badge bg-light text-secondary border">Інтерактивний графік</span>
+        </div>
+        
+        <div class="chart-container" id="chartArea">
+          <!-- <canvas id="myLineChart"></canvas> -->
+          <div class="text-center text-muted p-4" id="temp-div">
+            <i class="bi bi-graph-up-arrow display-4 text-primary opacity-50 d-block mb-2"></i>
+            <p class="mb-0 fw-medium">Область для вашого графіка</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
