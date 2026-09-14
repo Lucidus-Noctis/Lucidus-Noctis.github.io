@@ -26,8 +26,11 @@ form.addEventListener('submit', (event) => {
     const startDate = document.getElementById('startDate').value.replaceAll('-', '');
     const endDate = document.getElementById('endDate').value.replaceAll('-', '');
     
-    const url = `https://bank.gov.ua/NBU_Exchange/exchange_site?start=${startDate}&end=${endDate}&valcode=${valcode}&sort=exchangedate&json`;
-    
+    // fix bug when startDate > endDate
+    const url = startDate > endDate ? 
+                `https://bank.gov.ua/NBU_Exchange/exchange_site?start=${endDate}&end=${startDate}&valcode=${valcode}&sort=exchangedate&order=desc&json`:
+                `https://bank.gov.ua/NBU_Exchange/exchange_site?start=${startDate}&end=${endDate}&valcode=${valcode}&sort=exchangedate&json`;
+
     const xhr = new XMLHttpRequest();
     xhr.open('GET', url);
     xhr.addEventListener('readystatechange', function() {
@@ -65,7 +68,6 @@ form.addEventListener('submit', (event) => {
             chartArea.appendChild(canvas);
         }
     });
-
     xhr.send();
 });
 
