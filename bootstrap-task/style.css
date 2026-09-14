@@ -1,0 +1,15 @@
+/* Position fieldset legends on top of the border line */
+.custom-fieldset {
+  position: relative;
+  border-color: #dee2e6 !important;
+}
+
+.custom-legend {
+  font-size: 0.9rem !important;
+  margin-bottom: 0;
+}
+
+/* Two-color gradient for progress bar */
+.custom-progress-bar {
+  background: linear-gradient(90deg, #198754 0%, #0d5132 100%);
+}
