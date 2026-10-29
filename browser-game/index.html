@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="page-container">
+            <header class="game-header">
+                <a href="#" class="header-logo">
+                    <span class="logo-icon">✦</span>
+                    <span>GALAXY DEFENDER</span>
+                </a>
+            </header>
+
+            <main>
+                <div class="game">
+                    <div class="outer-game-field outer-border">
+                        <div class="inner-game-field inner-border"></div>
+                    </div>
+
+                    <aside class="game-sidebar outer-border">
+                        <article class="score-field inner-border">
+                            <label for="score">SCORE</label>
+                            <p id="score">0</p>
+                        </article>
+
+                        <article class="speed-control-field inner-border">
+                            <label for="speed">SPEED</label>
+                            <select class="inner-border" id="speed">
+                                <option class="speed-option" value="1">
+                                    01
+                                </option>
+                                <option class="speed-option" value="2">
+                                    02
+                                </option>
+                                <option class="speed-option" value="3">
+                                    03
+                                </option>
+                                <option class="speed-option" value="4">
+                                    04
+                                </option>
+                                <option class="speed-option" value="5">
+                                    05
+                                </option>
+                            </select>
+                        </article>
+
+                        <button class="start-btn inner-border">
+                            &#9654; START
+                        </button>
+                    </aside>
+                </div>
+            </main>
+
+            <footer class="game-footer">
+                <p class="footer-logo">✦ GALAXY DEFENDER</p>
+                <p class="footer-copyright">© 2026 · All rights reserved</p>
+                <p class="footer-credit">MADE FOR SPACE EXPLORERS</p>
+            </footer>
+        </div>
+
+        <script type="module" src="js/script.js"></script>
+    </body>
+</html>

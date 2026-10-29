@@ -1,0 +1,10 @@
+export const ENEMY_X_GAP = 20;
+export const ENEMY_Y_GAP = 20;
+export const SHIP_WIDTH = 20;
+export const SHIP_HEIGHT = 20;
+export const ENEMY_SPEED = 0.25;
+export const PLAYER_SPEED = 20;
+export const PLAYER_WIDTH = 20;
+export const PLAYER_HEIGHT = 20;
+export const BULLET_SPEED = 20;
+export const SCORE_FOR_ENEMY = 10;

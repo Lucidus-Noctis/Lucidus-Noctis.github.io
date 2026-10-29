@@ -1,0 +1,23 @@
+:root {
+    /* Colors */
+    --color-background: #060a17;
+    --color-primary: #7957ff;
+    --color-text: #e8edff;
+    --border-color: #17264d;
+
+    /* Font */
+    --font-family: "Oxanium", sans-serif;
+    --score-font-size: 60px;
+    --speed-font-size: 40px;
+    --ordinary-font-size: 25px;
+
+    /* Sizes */
+    --container-max-width: 1200px;
+    --container-padding: 20px;
+    --border-radius: 35px;
+    --border-gap: 20px;
+    --footer-height: 75px;
+    --border-size: 4px;
+
+    /* Game properties */
+}
